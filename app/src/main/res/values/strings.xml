@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActionAid Sacco</string>
+    <string name="title_activity_borrow_loan">BorrowLoan</string>
+    <string name="title_activity_loan_details">LoanDetails</string>
+    <string name="title_activity_loan_repayment">LoanRepayment</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+</resources>

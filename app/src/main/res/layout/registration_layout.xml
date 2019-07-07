@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Details"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+
+
+        />
+
+    <EditText
+        android:layout_below="@id/tv_register"
+        android:layout_alignParentTop="true"
+        android:hint="Member Number"
+        android:id="@+id/registrationMemberNo"
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:hint="Phone Number"
+        android:id="@+id/et_phoneNumber"
+        android:layout_below="@id/registrationMemberNo"
+        android:layout_alignLeft="@id/registrationMemberNo"
+        android:layout_alignStart="@id/registrationMemberNo"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_height="50dp" />
+    <EditText
+        android:hint="ID No"
+        android:id="@+id/et_idNumber"
+        android:layout_below="@id/et_phoneNumber"
+        android:layout_alignLeft="@id/et_phoneNumber"
+        android:layout_alignStart="@id/et_phoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_height="50dp" />
+    <EditText
+        android:hint="Password"
+        android:id="@+id/registerPassword"
+        android:layout_below="@id/et_idNumber"
+        android:layout_alignLeft="@id/et_idNumber"
+        android:layout_alignStart="@id/et_idNumber"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_height="50dp" />
+
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

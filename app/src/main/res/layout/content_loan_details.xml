@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoanDetails"
+    tools:showIn="@layout/activity_loan_details">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="Loan Details"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/principalAMountLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="113dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Principal AMount" />
+
+    <TextView
+        android:id="@+id/loanDetailsPricipalAmount"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/principalAMountLBL"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="37dp"
+        android:text="5000"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/interestRateLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/principalAMountLBL"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:text="Interest Rate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/principalAMountLBL" />
+
+    <TextView
+        android:id="@+id/loanDetailsInterestRate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/loanDetailsPricipalAmount"
+        android:layout_alignLeft="@+id/loanDetailsPricipalAmount"
+        android:layout_alignTop="@+id/interestRateLBL"
+        android:layout_marginTop="-1dp"
+        android:text="10%"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/principalAMountLBL"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="242dp"
+        android:text="Interest"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/principalAMountLBL" />
+
+    <TextView
+        android:id="@+id/loanDetailsInterest"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:layout_alignStart="@+id/loanDetailsPricipalAmount"
+        android:layout_alignLeft="@+id/loanDetailsPricipalAmount"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_marginBottom="0dp"
+        android:text="500"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/loanDetailsTotalDueLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/principalAMountLBL"
+        android:text="Total Due"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280sp"
+        android:layout_alignLeft="@+id/principalAMountLBL" />
+
+    <TextView
+        android:id="@+id/loanDetailsTotalDue"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:layout_alignStart="@+id/loanDetailsPricipalAmount"
+        android:layout_alignLeft="@+id/loanDetailsPricipalAmount"
+        android:layout_alignBottom="@+id/loanDetailsTotalDueLBL"
+        android:layout_marginBottom="-4dp"
+        android:text="5500"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/requestLoanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="85dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Request This Loan"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

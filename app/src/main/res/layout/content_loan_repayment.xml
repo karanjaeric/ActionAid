@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoanRepayment"
+    tools:showIn="@layout/activity_loan_repayment">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="36dp"
+        android:text="Repay Your Loan Instantly"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/amountToRepay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/repayNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/colorAccent"
+        android:text="Repay Now"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/amountToRepay"
+        android:layout_alignLeft="@+id/amountToRepay"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-38dp"
+        android:layout_marginLeft="-38dp"
+        android:layout_marginTop="252dp"
+        android:text="You Will receive a prompt on your Phone.Enter Your Pin to Authorize Paymment"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+</RelativeLayout>
